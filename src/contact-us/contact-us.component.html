@@ -1,0 +1,29 @@
+<section >
+    <div class="container w-50">
+        <h1 class="text-uppercase fw-bold text-center pt-3 text-main-1">conatct section</h1>
+        <app-star color="var(--main-color-1)"></app-star>
+        <div class="form-floating m-3">
+            <div class="mb-3">
+                <label for="floatingInput" [hidden]="isHidden(nameValue)" class="text-main-2 mb-2">userName:</label>
+                <input type="text" class="form-control border-top-0 border-start-0 border-end-0" id="floatingInput" placeholder="userName" [(ngModel)]="nameValue">
+
+            </div>
+            <div class="mb-3">
+                <label for="floatingInput" [hidden]="ageHidden(ageValue)" class="text-main-2 mb-2">userAge:</label>
+                <input type="number" class="form-control border-top-0 border-start-0 border-end-0" id="floatingInput" placeholder="userAge" [(ngModel)]="ageValue" value=''>
+            </div>
+            <div class="mb-3">
+                <label for="floatingInput" [hidden]="isHidden(emailValue)" class="text-main-2 mb-2">userEmail:</label>
+                <input type="email" class="form-control border-top-0 border-start-0 border-end-0" id="floatingInput" placeholder="userEmail" [(ngModel)]="emailValue">
+            </div>
+            <div class="mb-3">
+                <label for="floatingInput" [hidden]="isHidden(passwordValue)" class="text-main-2 mb-2">userPassword:</label>    
+                <input type="password" class="form-control border-top-0 border-start-0 border-end-0" id="floatingInput" placeholder="userPassword" [(ngModel)]="passwordValue">
+            </div>
+            <button class="btn btn-main-2 text-white m-3">send Message</button>
+        </div>
+    </div>
+    
+</section>
+
+

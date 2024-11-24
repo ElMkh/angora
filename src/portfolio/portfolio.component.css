@@ -1,0 +1,40 @@
+section{
+    padding: 120px 0px 0px;
+}
+
+.parent-card{
+    position: relative;
+} 
+
+.card-plus{
+    position: absolute;
+    background-color: var(--main-color-2);
+    opacity: 0.9;
+    inset: 0px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 500ms ease;
+}
+.bg-blue-opacity{
+    background-color: rgba(0, 119, 255, 0.24);
+}
+.parent-card:hover .card-plus{
+    opacity: 0.9;
+}
+
+.card-plus i{
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
+
+.card-plus button{
+    border: 0;
+    background-color: rgb(255, 255, 255,0);
+}

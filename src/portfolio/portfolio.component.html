@@ -1,0 +1,33 @@
+<section>
+  <div class="container">
+    <div class="headPortfolio">
+      <h2 class="text-uppercase h1 fw-bold text-center pt-3 text-main-1">portfolio component</h2>
+      <app-star color="var(--main-color-1)"></app-star>
+    </div>
+    <div class="row">
+      @for (item of items ; track i ;let i = $index) {
+        <div class="col-12 col-lg-4 col-md-6 col-sm-12 p-4">
+          <div class="parent-card card border-0">
+            <img [src]="item.imgSrc" class="w-100 rounded rounded-3" alt="photo">
+            <div class="card-plus">
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" [attr.data-bs-target]="'#modal' + i" (click)="setCurrentImage(item.imgSrc)" >
+                <i class="fa-solid fa-plus text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="modal fade bg-opacity-75 bg-blue-opacity" [id]="'modal' + i" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-body p-0">
+                <img [src]="currentImage" class="w-100" alt="photo">
+              </div>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+

@@ -1,0 +1,33 @@
+/* !!!!!   *******REVIEW AGAIN LATER YA OSAMA******  */
+
+.icon-star {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  
+  .icon-star::before {
+    content: "";
+    position: absolute;
+    width: 5rem; 
+    height: 0.3rem; 
+    background-color: currentColor;
+    right: 90%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .icon-star::after {
+    content: "";
+    position: absolute;
+    width: 5rem; 
+    height: 0.3rem;
+    background-color: currentColor;
+    left: 90%; 
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+ 
+
+  

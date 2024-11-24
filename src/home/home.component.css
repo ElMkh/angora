@@ -1,0 +1,9 @@
+.card{
+    max-width: 600px;
+}
+.avatar img{
+    max-width: 250px;
+}
+section{
+    padding: 200px 0px 100px;
+}

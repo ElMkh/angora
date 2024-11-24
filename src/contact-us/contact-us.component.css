@@ -1,0 +1,17 @@
+button:hover{
+    background-color: var(--main-color-2);
+    color: white;
+}
+.form-control:focus{
+    border-color: #dee2e6;
+    box-shadow: 0 0 0 0 #ffffff;
+}
+  
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+section{
+    padding: 120px 0px 0px;
+}
