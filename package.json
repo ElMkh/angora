@@ -2,6 +2,8 @@
   "name": "start-framework",
   "version": "0.0.0",
   "scripts": {
+    "build:ssr": "ng build --configuration=production && ng run start-framework:server:production",
+    "serve:ssr": "node dist/start-framework/server/main.js",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",

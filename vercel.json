@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "dist/start-framework>/server/main.js", "use": "@vercel/node" },
+      { "src": "dist/start-framework>/**", "use": "@vercel/static" }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "dist/start-framework>/server/main.js" }
+    ]
+  }

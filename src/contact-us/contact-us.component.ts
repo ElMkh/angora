@@ -11,7 +11,7 @@ import { FormsModule } from '@angular/forms';
 })
 export class ContactUsComponent {
 nameValue:string = '' ;
-ageValue:number = 0 ;
+ageValue!:number  ;
 emailValue:string = '';
 passwordValue:string = '';
 
